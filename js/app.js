@@ -123,6 +123,10 @@ class UI {
 
         const restanteDiv = document.querySelector('.restante');
 
+        if (restante >= 0) {
+            formulario.querySelector('button[type="submit"]').disabled = false;
+        }
+
         // Comprobar 25% 
         if ((presupuesto / 4 ) > restante ) {
             restanteDiv.classList.remove('alert-success' , 'alert-warning')
@@ -154,7 +158,7 @@ let presupuesto;
 // Funciones
 
 function preguntarPresupuesto() {
-    const presupuestoUsuario = prompt('¿Cuál es tu Presupuesto?');
+    const presupuestoUsuario = 100
 
    /*  console.log(Number(presupuestoUsuario)); */
 
