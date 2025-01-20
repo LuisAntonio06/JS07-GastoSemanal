@@ -158,7 +158,7 @@ let presupuesto;
 // Funciones
 
 function preguntarPresupuesto() {
-    const presupuestoUsuario = prompt ('¿Cuál es tu presupuesto?);
+    const presupuestoUsuario = prompt('¿Cuál es tu presupuesto?');
 
    /*  console.log(Number(presupuestoUsuario)); */
 
